@@ -1,0 +1,2 @@
+# Axum Login
+This is a fork of [axum login](https://github.com/maxcountryman/axum-login) with support for rusqlite. This is just being used temporarily while `axum_login` is sorting out rusqlite support in the main repo.
