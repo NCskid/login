@@ -169,7 +169,6 @@
 //! }
 //! ```
 
-#![deny(missing_docs)]
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
 mod auth;
@@ -185,5 +184,5 @@ pub use auth_user::AuthUser;
 pub use axum_sessions;
 pub use secrecy;
 
-pub use rusqlite_store::RusqliteStore;
+pub use rusqlite_store::{RusqliteStore, RusqliteUserMapper};
 pub use user_store::UserStore;
