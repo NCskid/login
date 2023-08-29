@@ -57,7 +57,7 @@ where
     UserMapper: RusqliteUserMapper<User = User>,
 {
     type User = User;
-    type Error = rusqlite::Error;
+    type Error = tokio_rusqlite::Error;
 
     async fn load_user(&self, user_id: &UserId) -> Result<Option<Self::User>, Self::Error> {
         let id = user_id.clone();
